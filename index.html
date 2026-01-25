@@ -18,15 +18,16 @@
             <input type="text" id="name" name="name" required>
             <br><br>
 
-            <label for="phone">Phone Number:</label>
+            <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" required>
             <br><br>
 
-            <label for="email">Email Address:</label>
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <br><br>
 
             <h2>Select Pizza Size</h2>
+            Pizza size:
             <select id="size" name="size" required>
                 <option value="">Select Size</option>
                 <option value="medium">Medium</option>
@@ -36,13 +37,17 @@
             <br><br>
 
             <h2>Select Sauce</h2>
-            <select id="sauce" name="sauce" required>
-                <option value="">Select Sauce</option>
-                <option value="marinara">Marinara</option>
-                <option value="alfredo">Alfredo</option>
-                <option value="bbq">BBQ</option>
-                <option value="pesto">Pesto</option>
-            </select>
+            <input type="radio" id="marinara" name="sauce" value="marinara" required>
+            <label for="marinara">Marinara</label>
+            <br>
+            <input type="radio" id="alfredo" name="sauce" value="alfredo" required>
+            <label for="alfredo">Alfredo</label>
+            <br>
+            <input type="radio" id="bbq" name="sauce" value="bbq" required>
+            <label for="bbq">BBQ</label>
+            <br>
+            <input type="radio" id="pesto" name="sauce" value="pesto" required>
+            <label for="pesto">Pesto</label>
             <br><br>
 
             <h2>Select Toppings</h2>
