@@ -8,24 +8,25 @@
 </head>
 
 <body>
-    <h1>Pizza Ordering Form</h1>
+    <fieldset>
+        <h1>Pizza Ordering Form</h1>
 
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Contact Information</legend>
+        <form action="#" method="post">
+            <h3>Contact Information</h3>
 
             <label for="name">Name: *</label>
             <input type="text" id="name" name="name" required>
+            <br><br>
 
             <label for="phone">Phone Number: *</label>
             <input type="tel" id="phone" name="phone" required>
+            <br><br>
 
             <label for="email">Email Address: *</label>
             <input type="email" id="email" name="email" required>
-        </fieldset>
+            <br><br>
 
-        <fieldset>
-            <legend>Select Pizza Details</legend>
+            <h3>Select Pizza Details</h3>
 
             <label for="size">Select Pizza Size: *</label>
             <select id="size" name="size" required>
@@ -34,6 +35,7 @@
                 <option value="large">Large</option>
                 <option value="xlarge">XLarge</option>
             </select>
+            <br><br>
 
             <label for="sauce">Select Sauce: *</label>
             <select id="sauce" name="sauce" required>
@@ -43,96 +45,106 @@
                 <option value="bbq">BBQ</option>
                 <option value="pesto">Pesto</option>
             </select>
+            <br><br>
 
             <label>Select Toppings:</label>
+            <br>
             <div class="checkbox-group">
                 <div class="checkbox-item">
                     <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
                     <label for="pepperoni">Pepperoni</label>
                 </div>
+                <br>
                 <div class="checkbox-item">
                     <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
                     <label for="mushrooms">Mushrooms</label>
                 </div>
+                <br>
                 <div class="checkbox-item">
                     <input type="checkbox" id="onions" name="toppings" value="onions">
                     <label for="onions">Onions</label>
                 </div>
+                <br>
                 <div class="checkbox-item">
                     <input type="checkbox" id="sausage" name="toppings" value="sausage">
                     <label for="sausage">Sausage</label>
                 </div>
+                <br>
                 <div class="checkbox-item">
                     <input type="checkbox" id="bacon" name="toppings" value="bacon">
                     <label for="bacon">Bacon</label>
                 </div>
+                <br>
                 <div class="checkbox-item">
                     <input type="checkbox" id="olives" name="toppings" value="olives">
                     <label for="olives">Olives</label>
                 </div>
+                <br>
                 <div class="checkbox-item">
                     <input type="checkbox" id="peppers" name="toppings" value="peppers">
                     <label for="peppers">Bell Peppers</label>
                 </div>
+                <br>
                 <div class="checkbox-item">
                     <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
                     <label for="pineapple">Pineapple</label>
                 </div>
             </div>
-        </fieldset>
+            <br>
 
-        <button type="submit">Submit Order</button>
-    </form>
+            <button type="submit">Submit Order</button>
+        </form>
 
-    <section>
-        <h2>Favorite Video Games</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Game Title</th>
-                    <th>Genre</th>
-                    <th>Platform</th>
-                    <th>Release Year</th>
-                    <th>Rating</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>The Legend of Zelda: Breath of the Wild</td>
-                    <td rowspan="2">Action-Adventure</td>
-                    <td>Nintendo Switch</td>
-                    <td>2017</td>
-                    <td>10/10</td>
-                </tr>
-                <tr>
-                    <td>Red Dead Redemption 2</td>
-                    <td>PlayStation 4, Xbox One, PC</td>
-                    <td>2018</td>
-                    <td>9.5/10</td>
-                </tr>
-                <tr>
-                    <td>Minecraft</td>
-                    <td>Sandbox</td>
-                    <td colspan="2">Multi-platform (2011)</td>
-                    <td>9/10</td>
-                </tr>
-                <tr>
-                    <td>Elden Ring</td>
-                    <td>Action RPG</td>
-                    <td>Multi-platform</td>
-                    <td>2022</td>
-                    <td>10/10</td>
-                </tr>
-                <tr>
-                    <td>God of War (2018)</td>
-                    <td>Action-Adventure</td>
-                    <td>PlayStation 4, PC</td>
-                    <td>2018</td>
-                    <td>9.5/10</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        <section>
+            <h2>Favorite Video Games</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Game Title</th>
+                        <th>Genre</th>
+                        <th>Platform</th>
+                        <th>Release Year</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Legend of Zelda: Breath of the Wild</td>
+                        <td rowspan="2">Action-Adventure</td>
+                        <td>Nintendo Switch</td>
+                        <td>2017</td>
+                        <td>10/10</td>
+                    </tr>
+                    <tr>
+                        <td>Red Dead Redemption 2</td>
+                        <td>PlayStation 4, Xbox One, PC</td>
+                        <td>2018</td>
+                        <td>9.5/10</td>
+                    </tr>
+                    <tr>
+                        <td>Minecraft</td>
+                        <td>Sandbox</td>
+                        <td colspan="2">Multi-platform (2011)</td>
+                        <td>9/10</td>
+                    </tr>
+                    <tr>
+                        <td>Elden Ring</td>
+                        <td>Action RPG</td>
+                        <td>Multi-platform</td>
+                        <td>2022</td>
+                        <td>10/10</td>
+                    </tr>
+                    <tr>
+                        <td>God of War (2018)</td>
+                        <td>Action-Adventure</td>
+                        <td>PlayStation 4, PC</td>
+                        <td>2018</td>
+                        <td>9.5/10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </fieldset>
 </body>
 
 </html>
