@@ -11,7 +11,7 @@
     <fieldset>
         <h1>Pizza Ordering Form</h1>
 
-        <form action="#" method="post">
+        <form id="pizzaForm">
             <h2>Contact Information</h2>
 
             <label for="name">Name:</label>
@@ -120,19 +120,19 @@
                         <td>2017</td>
                     </tr>
                     <tr>
-                        <td>Rockstar Games</td>
-                        <td>Red Dead Redemption 2</td>
-                        <td>2018</td>
+                        <td>Team Cherry</td>
+                        <td>Hollow Knight</td>
+                        <td>2017</td>
                     </tr>
                     <tr>
-                        <td>Mojang Studios</td>
-                        <td>Minecraft</td>
-                        <td colspan="2">2011</td>
+                        <td>Daniel Mullins Games</td>
+                        <td>Inscription</td>
+                        <td colspan="2">2021</td>
                     </tr>
                     <tr>
-                        <td>FromSoftware</td>
-                        <td>Elden Ring</td>
-                        <td>2022</td>
+                        <td>MegaCrit</td>
+                        <td>Slay the Spire</td>
+                        <td>2019</td>
                     </tr>
                     <tr>
                         <td colspan="3">Total Games: 5</td>
@@ -141,6 +141,13 @@
             </table>
         </section>
     </fieldset>
+
+    <script>
+        document.getElementById('pizzaForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            this.reset();
+        });
+    </script>
 </body>
 
 </html>
