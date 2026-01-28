@@ -34,12 +34,12 @@ h3 {
 .blue {
     padding: 20px;
     color: white;
-    background-color: #1a00ab;
+    background-color: #15008b;
 }
 
 a {
     color: #cc0000;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
