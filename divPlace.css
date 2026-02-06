@@ -124,31 +124,7 @@ article a:hover {
 
 #thanks {
     position: fixed;
-    bottom: 15px;
-    right: 15px;
-    background: linear-gradient(135deg, #ff6b9d 0%, #ffa726 100%);
-    color: #fff;
-    padding: 15px 20px;
-    border: 4px dashed #ffeb3b;
-    font-weight: bold;
-    font-size: 1.2em;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-    transform: rotate(-3deg);
-    animation: wiggle 3s infinite;
-}
-
-@keyframes wiggle {
-    0%, 100% { transform: rotate(-3deg); }
-    25% { transform: rotate(-5deg); }
-    50% { transform: rotate(-1deg); }
-    75% { transform: rotate(-4deg); }
-}
-
-footer {
-    background: linear-gradient(180deg, #9c27b0 0%, #673ab7 100%);
-    color: #fff;
-    padding: 0px;
+    bottom: 10px;
     right: 10px;
     background-color: orange;
     color: black;
@@ -156,25 +132,3 @@ footer {
     border: 3px solid black;
     font-weight: bold;
 }
-
-footer {
-    background-color: #777777;
-    color: black;
-    padding: 20px 15px;
-    margin-top: 30px;
-    border-top: 3px solid black;
-}
-5px;
-}
-
-footer address span {
-    color: black;
-}
-
-footer address a {
-    color: blue;
-    text-decoration: underline;
-}
-
-footer address a:hover {
-    color: red
