@@ -9,7 +9,6 @@ body {
     background-color: #e0e0e0;
 }
 
-/* Navigation styling */
 #menuItems {
     position: fixed;
     left: 0;
@@ -33,18 +32,15 @@ body {
     transition: background-color 0.3s;
 }
 
-/* Navigation button hover effect */
 #menuItems button:hover {
     background-color: #888;
 }
 
-/* Recent Articles button with dropdown */
 #recentArticles {
     position: relative;
     margin-bottom: 0;
 }
 
-/* Jump menu initially hidden */
 #jumpMenu {
     display: none;
     list-style: none;
@@ -53,7 +49,6 @@ body {
     padding: 10px;
 }
 
-/* Show jump menu when hovering over Recent Articles button */
 #recentArticles:hover + #jumpMenu,
 #jumpMenu:hover {
     display: block;
@@ -71,13 +66,11 @@ body {
     transition: color 0.3s, background-color 0.3s;
 }
 
-/* Jump menu link hover effect */
 #jumpMenu a:hover {
     color: #ffd54f;
     background-color: #555;
 }
 
-/* Main content area */
 main {
     margin-left: 220px;
     padding: 20px;
@@ -103,7 +96,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Article container */
 #container {
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +103,6 @@ h1 {
     justify-content: flex-start;
 }
 
-/* Articles with light color initially */
 article {
     width: 300px;
     background-color: #f5f5f5;
@@ -121,7 +112,6 @@ article {
     transition: color 2s, transform 2s;
 }
 
-/* Article hover effect - darker text and expansion */
 article:hover {
     color: #333;
     transform: scale(1.05);
@@ -137,13 +127,11 @@ article p {
     margin-bottom: 10px;
 }
 
-/* First letter of article main text (first paragraph only) */
 article p:first-of-type::first-letter {
     font-family: 'Times New Roman', serif;
     font-size: 36px;
 }
 
-/* Links to Google with arrow */
 article a[href*="google.com"]::after {
     content: '';
     display: inline-block;
@@ -157,7 +145,7 @@ article a[href*="google.com"]::after {
 }
 
 article a {
-    color: #5a5a5a;
+    color: #2196F3;
     text-decoration: underline;
 }
 
@@ -165,7 +153,6 @@ article a:hover {
     text-decoration: underline;
 }
 
-/* Thank you section */
 #thanks {
     text-align: center;
     margin: 40px 0;
@@ -181,7 +168,6 @@ article a:hover {
     text-decoration: none;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;
