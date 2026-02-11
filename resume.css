@@ -1,0 +1,330 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Mobile-First Design (412px) */
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+}
+
+header p {
+    margin: 8px 0;
+    font-size: 0.95em;
+}
+
+header a {
+    color: #ffd54f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #553c9a;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+nav li {
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 25px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+section:hover {
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
+    transform: translateY(-2px);
+}
+
+section h2 {
+    color: #667eea;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+}
+
+/* Article Styles */
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #667eea;
+    border-radius: 4px;
+}
+
+article:last-of-type {
+    margin-bottom: 0;
+}
+
+article h3 {
+    color: #553c9a;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+article h3 a {
+    color: #553c9a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+article h3 a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+article p {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Skills List */
+article ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+article ul li {
+    padding: 8px 15px;
+    margin: 5px 0;
+    background-color: white;
+    border-left: 3px solid #667eea;
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+article ul li:hover {
+    background-color: #f0f0ff;
+    padding-left: 25px;
+}
+
+article ul li::before {
+    content: '▹ ';
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Project Page Specific Styles */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+figure img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    font-size: 0.95em;
+}
+
+article > section {
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+article > section:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+article > section h3 {
+    color: #667eea;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Desktop/Laptop Design (1920px) */
+@media (min-width: 768px) {
+    /* Header adjustments */
+    header {
+        padding: 50px 40px;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header p {
+        font-size: 1.1em;
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    /* Navigation - Horizontal Layout */
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav li {
+        text-align: left;
+    }
+
+    nav a {
+        padding: 12px 30px;
+    }
+
+    nav a:hover {
+        transform: translateY(-3px);
+    }
+
+    /* Main Content */
+    main {
+        padding: 40px;
+    }
+
+    section {
+        padding: 35px 40px;
+        margin-bottom: 30px;
+    }
+
+    section h2 {
+        font-size: 2.2em;
+    }
+
+    /* Two-column layout for projects */
+    section:has(article h3 a) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section:has(article h3 a) > :not(h2) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    section:has(article h3 a) article {
+        flex: 1;
+        min-width: calc(50% - 10px);
+    }
+
+    /* Skills section - multi-column list */
+    article ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    article ul li {
+        flex: 0 1 calc(33.333% - 10px);
+    }
+
+    /* Education article styling */
+    article p {
+        font-size: 1.05em;
+    }
+}
+
+/* Extra large screens */
+@media (min-width: 1920px) {
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    section h2 {
+        font-size: 2.5em;
+    }
+
+    article h3 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 60px;
+    }
+}
