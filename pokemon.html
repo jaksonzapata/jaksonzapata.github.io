@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Team Builder</title>
+    <link rel="stylesheet" href="pokemon-team-builder.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pokemon Team API</h1>
+
+        <div class="search-section">
+            <h2>Search Pokemon (Name or ID)</h2>
+            <input type="text" id="pokemonInput" placeholder="Enter Pokemon name or ID">
+            <button id="searchBtn">Search Pokemon</button>
+            <div id="errorMessage" class="error-message"></div>
+        </div>
+
+        <div id="pokemonDetails" class="pokemon-details" style="display: none;">
+            <h2>Pokemon Details</h2>
+            <div class="pokemon-info">
+                <img id="pokemonImage" src="" alt="Pokemon Image">
+                <div class="pokemon-data">
+                    <h3 id="pokemonName"></h3>
+                    <p><strong>ID:</strong> <span id="pokemonId"></span></p>
+                    <p><strong>Type:</strong> <span id="pokemonType"></span></p>
+                    <p><strong>Height:</strong> <span id="pokemonHeight"></span></p>
+                    <p><strong>Weight:</strong> <span id="pokemonWeight"></span></p>
+                </div>
+            </div>
+
+            <div class="audio-section">
+                <audio id="pokemonAudio" controls>
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="moves-section">
+                <h3>Select 4 Moves</h3>
+                <div class="move-dropdowns">
+                    <div class="move-dropdown">
+                        <label for="move1">Move 1:</label>
+                        <select id="move1"></select>
+                    </div>
+                    <div class="move-dropdown">
+                        <label for="move2">Move 2:</label>
+                        <select id="move2"></select>
+                    </div>
+                    <div class="move-dropdown">
+                        <label for="move3">Move 3:</label>
+                        <select id="move3"></select>
+                    </div>
+                    <div class="move-dropdown">
+                        <label for="move4">Move 4:</label>
+                        <select id="move4"></select>
+                    </div>
+                </div>
+            </div>
+
+            <button id="addToTeamBtn" class="add-to-team-btn">Add to Team</button>
+        </div>
+
+        <div class="team-section">
+            <h2>My Pokemon Team</h2>
+            <div id="teamDisplay" class="team-display">
+                <p class="empty-team">No Pokemon added yet. Start building your team!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="pokemon-team-builder.js"></script>
+</body>
+
+</html>
